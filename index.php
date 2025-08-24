@@ -375,7 +375,7 @@
                                             </a>
                                         </div>
                                         <div class="col-12">
-                                            <a href="https://wa.me/919876543210?text=Hi, I'm interested in <?php echo urlencode($product['name'] . ' - ₹' . number_format($product['discounted_price'])); ?>" 
+                                            <a href="https://wa.me/919478210404?text=Hi, I'm interested in <?php echo urlencode($product['name'] . ' - ₹' . number_format($product['discounted_price'])); ?>" 
                                                target="_blank" class="btn btn-success whatsapp-btn w-100">
                                                 <i class="bi bi-whatsapp"></i> Order on WhatsApp
                                             </a>
