@@ -179,6 +179,18 @@ if (!$product) {
                         <li><strong>Model:</strong> <?php echo $product['model']; ?></li>
                     </ul>
 
+                      <!-- Action Buttons -->
+                    <div class="d-grid gap-2 d-md-flex mt-4">
+                        <a href="https://wa.me/919478210404?text=Hi, I want to order <?php echo urlencode($product['name'] . ' - ₹' . number_format($product['discounted_price'])); ?>. Please provide more details." 
+                        target="_blank" class="btn btn-success whatsapp-btn me-md-2">
+                            <i class="bi bi-whatsapp"></i> Order on WhatsApp
+                        </a>
+                        <a href="index.php" class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-left"></i> Back to Products
+                        </a>
+                    </div>
+                    <br>
+
                     <!-- Tabs -->
                     <ul class="nav nav-tabs mb-3" id="productTab" role="tablist">
                         <li class="nav-item">
@@ -239,16 +251,7 @@ if (!$product) {
                         </div>
                     </div>
 
-                    <!-- Action Buttons -->
-                    <div class="d-grid gap-2 d-md-flex mt-4">
-                        <a href="https://wa.me/919876543210?text=Hi, I want to order <?php echo urlencode($product['name'] . ' - ₹' . number_format($product['discounted_price'])); ?>. Please provide more details." 
-                        target="_blank" class="btn btn-success whatsapp-btn me-md-2">
-                            <i class="bi bi-whatsapp"></i> Order on WhatsApp
-                        </a>
-                        <a href="index.php" class="btn btn-outline-secondary">
-                            <i class="bi bi-arrow-left"></i> Back to Products
-                        </a>
-                    </div>
+                  
 
                 </div>
             </div>
